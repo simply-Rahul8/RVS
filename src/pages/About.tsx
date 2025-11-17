@@ -12,8 +12,8 @@ const About = () => {
     },
     {
       icon: Heart,
-      title: "Real-World Impact",
-      description: "We believe in learning by doing. Every course includes hands-on projects with real companies and real outcomes",
+      title: "Practical Excellence",
+      description: "We believe in learning by doing. Every course includes comprehensive hands-on exercises and practical assignments to solidify your skills",
     },
     {
       icon: Lightbulb,
@@ -34,7 +34,7 @@ const About = () => {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary-light via-background to-secondary-light py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About RisingVisionary</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About RisingVisionaryServices</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Empowering the next generation of tech professionals through hands-on learning and real-world experience
           </p>
@@ -47,14 +47,14 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At RisingVisionary Services, we believe that the best way to learn is by doing. We bridge the gap between theoretical knowledge and practical skills by providing small-batch, intensive training programs where students work on real projects from actual tech companies.
+              At RisingVisionaryServices, we believe that the best way to learn is by doing. We bridge the gap between theoretical knowledge and practical skills by providing small-batch, intensive training programs with expert instructors and comprehensive curriculum.
             </p>
           </div>
 
           <Card className="border-2 bg-gradient-to-br from-primary-light to-secondary-light/30">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-center">
-                Our unique model ensures that every graduate leaves not just with a certificate, but with a portfolio of real work, practical experience, and the confidence to tackle real-world challenges in their chosen field.
+                Our unique model ensures that every graduate leaves not just with a certificate, but with solid technical skills, comprehensive knowledge, and the confidence to tackle real-world challenges in their chosen field.
               </p>
             </CardContent>
           </Card>

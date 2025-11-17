@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -25,7 +25,7 @@ const Contact = () => {
       {/* Contact Form and Info */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Contact Information */}
             <div className="space-y-6">
               <Card className="border-2">
@@ -36,8 +36,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-sm text-muted-foreground">info@risingvisionary.com</p>
-                      <p className="text-sm text-muted-foreground">admissions@risingvisionary.com</p>
+                      <p className="text-sm text-muted-foreground">raghuvamsisair@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -51,23 +50,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-sm text-muted-foreground">Mon-Fri, 9am-6pm EST</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Office</h3>
-                      <p className="text-sm text-muted-foreground">123 Learning Street</p>
-                      <p className="text-sm text-muted-foreground">Tech City, TC 12345</p>
+                      <p className="text-sm text-muted-foreground">+46 793 484 087</p>
+                      <p className="text-sm text-muted-foreground">Mon-Fri, 9am-6pm</p>
                     </div>
                   </div>
                 </CardContent>
@@ -89,60 +73,6 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <Card className="border-2">
-                <CardHeader>
-                  <CardTitle>Send us a Message</CardTitle>
-                  <CardDescription>
-                    Fill out the form below and we'll get back to you within 24 hours
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="first-name">First Name</Label>
-                        <Input id="first-name" placeholder="John" required />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="last-name">Last Name</Label>
-                        <Input id="last-name" placeholder="Doe" required />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="john@example.com" required />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number (Optional)</Label>
-                      <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
-                      <Input id="subject" placeholder="How can we help you?" required />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us more about your inquiry..."
-                        rows={6}
-                        required
-                      />
-                    </div>
-
-                    <Button type="submit" variant="hero" className="w-full" size="lg">
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
