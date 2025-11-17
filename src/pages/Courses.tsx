@@ -77,7 +77,7 @@ const Courses = () => {
           </p>
           <div className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-full">
             <Euro className="h-5 w-5 text-primary" />
-            <span className="font-semibold text-lg">Only €30 per course</span>
+            <span className="font-semibold text-lg">Only 1500 SEK per course</span>
           </div>
         </div>
       </section>
@@ -99,7 +99,7 @@ const Courses = () => {
                       <div className={`w-14 h-14 rounded-xl ${course.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                         <Icon className="h-7 w-7 text-white" />
                       </div>
-                      <Badge variant="secondary" className="text-xs">€30</Badge>
+                      <Badge variant="secondary" className="text-xs">1500 SEK</Badge>
                     </div>
                     <CardTitle className="text-2xl">{course.title}</CardTitle>
                   </CardHeader>
@@ -117,7 +117,7 @@ const Courses = () => {
                           <span>{course.batchSize}</span>
                         </div>
                       </div>
-                      <div className="text-2xl font-bold text-primary">€30</div>
+                      <div className="text-2xl font-bold text-primary">1500 SEK</div>
                     </div>
 
                     <div>

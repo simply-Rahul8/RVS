@@ -56,7 +56,28 @@ const Index = () => {
 
       {/* Marquee Banner */}
       <div className="bg-gradient-hero text-white py-3 overflow-hidden relative">
-        <div className="flex animate-[slide-in-right_20s_linear_infinite]">
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+          .marquee-content {
+            animation: marquee 20s linear infinite;
+            display: flex;
+            width: max-content;
+          }
+        `}</style>
+        <div className="marquee-content">
+          <div className="flex items-center gap-8 whitespace-nowrap px-8">
+            <Sparkles className="h-5 w-5" />
+            <span className="font-semibold text-lg">🎓 Admissions Open - Limited Seats Only!</span>
+            <Sparkles className="h-5 w-5" />
+            <span className="font-semibold text-lg">🎓 Admissions Open - Limited Seats Only!</span>
+            <Sparkles className="h-5 w-5" />
+            <span className="font-semibold text-lg">🎓 Admissions Open - Limited Seats Only!</span>
+            <Sparkles className="h-5 w-5" />
+            <span className="font-semibold text-lg">🎓 Admissions Open - Limited Seats Only!</span>
+          </div>
           <div className="flex items-center gap-8 whitespace-nowrap px-8">
             <Sparkles className="h-5 w-5" />
             <span className="font-semibold text-lg">🎓 Admissions Open - Limited Seats Only!</span>
@@ -164,9 +185,9 @@ const Index = () => {
                     <Award className="h-8 w-8 text-white" />
                   </div>
                   <div className="text-6xl md:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-2">
-                    3+
+                    1500
                   </div>
-                  <p className="text-lg font-semibold text-muted-foreground">Live Projects Delivered</p>
+                  <p className="text-lg font-semibold text-muted-foreground">SEK per Course</p>
                   <div className="mt-4 flex justify-center gap-2">
                     <Sparkles className="h-6 w-6 text-primary animate-pulse" />
                     <Sparkles className="h-6 w-6 text-secondary animate-pulse" style={{ animationDelay: '0.2s' }} />
@@ -214,7 +235,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Real-Life Experience CTA */}
+      {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary-light via-background to-secondary-light relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-10 w-72 h-72 bg-primary rounded-full blur-3xl animate-pulse" />
@@ -222,12 +243,12 @@ const Index = () => {
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <BookOpen className="h-16 w-16 mx-auto mb-6 text-primary animate-[scale-in_0.5s_ease-out]" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">Learn by Doing Real Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">Start Your Learning Journey Today</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Collaborate with small tech companies on actual outsourcing tasks. Build your portfolio while learning.
+            Join our small batch courses and gain the skills you need to succeed in tech.
           </p>
           <Button asChild variant="hero" size="lg" className="hover-scale animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <NavLink to="/real-life-experience">Discover Real Projects</NavLink>
+            <NavLink to="/courses">Explore Courses</NavLink>
           </Button>
         </div>
       </section>

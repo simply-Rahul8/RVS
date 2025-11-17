@@ -25,7 +25,7 @@ const Navbar = () => {
               <GraduationCap className="h-6 w-6 text-white" />
             </div>
             <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
-              RisingVisionary
+              RisingVisionaryServices
             </span>
           </NavLink>
 

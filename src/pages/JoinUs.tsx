@@ -17,7 +17,7 @@ const JoinUs = () => {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary-light via-background to-secondary-light py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Join RisingVisionary</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Join RisingVisionaryServices</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Whether you're a student, company, or trainer, we'd love to have you be part of our community
           </p>

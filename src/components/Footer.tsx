@@ -1,5 +1,5 @@
 import { NavLink } from "@/components/NavLink";
-import { GraduationCap, Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { GraduationCap, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,25 +12,16 @@ const Footer = () => {
               <div className="bg-gradient-hero p-2 rounded-lg">
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
-              <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
-                RisingVisionary
-              </span>
+            <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
+              RisingVisionaryServices
+            </span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering learners with real-world skills and hands-on experience for tomorrow's challenges.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="p-2 bg-primary-light rounded-lg hover:bg-primary hover:text-white transition-all">
+              <a href="https://www.linkedin.com/in/raghuvamsisairangannagari" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-light rounded-lg hover:bg-primary hover:text-white transition-all">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="p-2 bg-primary-light rounded-lg hover:bg-primary hover:text-white transition-all">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="p-2 bg-primary-light rounded-lg hover:bg-primary hover:text-white transition-all">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="p-2 bg-primary-light rounded-lg hover:bg-primary hover:text-white transition-all">
-                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -81,15 +72,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5 text-primary" />
-                <span>info@risingvisionary.com</span>
+                <span>raghuvamsisair@gmail.com</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 mt-0.5 text-primary" />
-                <span>+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 text-primary" />
-                <span>123 Learning Street, Tech City, TC 12345</span>
+                <span>+46 793 484 087</span>
               </li>
             </ul>
           </div>
