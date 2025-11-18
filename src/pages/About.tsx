@@ -45,8 +45,8 @@ const About = () => {
       {/* Hero Image */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-start">
-            <div className="w-80 h-80 rounded-full border-4 border-primary overflow-hidden shadow-lg flex-shrink-0">
+          <div className="flex items-center justify-center">
+            <div className="w-64 h-64 rounded-full border-4 border-primary overflow-hidden shadow-lg flex-shrink-0">
               <img 
                 src={hero1} 
                 alt="RisingVisionaryServices Hero" 

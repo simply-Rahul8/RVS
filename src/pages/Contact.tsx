@@ -29,12 +29,12 @@ const Contact = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
             
             {/* Contact Buttons - Horizontal Layout */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               {/* Call Button */}
               <Button
                 size="lg"
                 variant="default"
-                className="flex items-center gap-3 min-w-[200px] px-8"
+                className="flex items-center gap-3 px-8"
                 onClick={() => window.location.href = 'tel:+46793484087'}
               >
                 <Phone className="h-5 w-5" />
@@ -45,7 +45,7 @@ const Contact = () => {
               <Button
                 size="lg"
                 variant="hero"
-                className="flex items-center gap-3 min-w-[200px] px-8"
+                className="flex items-center gap-3 px-8"
                 onClick={() => window.open('https://www.linkedin.com/in/raghuvamsisairangannagari', '_blank')}
               >
                 <svg
@@ -58,18 +58,18 @@ const Contact = () => {
                 </svg>
                 <span>LinkedIn Profile</span>
               </Button>
-            </div>
 
               {/* Email Button */}
               <Button
                 size="lg"
                 variant="outline"
-                className="flex items-center gap-3 min-w-[250px] px-8"
+                className="flex items-center gap-3 px-8"
                 onClick={() => window.location.href = 'mailto:raghuvamsisair@gmail.com'}
               >
                 <Mail className="h-5 w-5" />
                 <span>raghuvamsisair@gmail.com</span>
               </Button>
+            </div>
 
 
             {/* Office Hours Info */}
