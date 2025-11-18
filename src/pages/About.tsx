@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Heart, Lightbulb, Users } from "lucide-react";
+import hero1 from "@/assets/hero1.jpg";
 
 const About = () => {
   const values = [
@@ -38,6 +39,21 @@ const About = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Empowering the next generation of tech professionals through hands-on learning and real-world experience
           </p>
+        </div>
+      </section>
+
+      {/* Hero Image */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-start">
+            <div className="w-80 h-80 rounded-full border-4 border-primary overflow-hidden shadow-lg flex-shrink-0">
+              <img 
+                src={hero1} 
+                alt="RisingVisionaryServices Hero" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
