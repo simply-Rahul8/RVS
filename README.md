@@ -71,3 +71,23 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+---
+
+## GitHub Pages
+
+This repository is published to GitHub Pages at:
+
+- https://simply-Rahul8.github.io/RVS/
+
+The project includes a GitHub Actions workflow that builds the site and deploys the `dist/` folder to the `gh-pages` branch automatically on pushes to `main`.
+
+Quick verification:
+
+```powershell
+# fetch the latest gh-pages branch
+git fetch origin gh-pages
+git log origin/gh-pages -1 --pretty=oneline
+```
+
+If you want the repository README to instead show a short project overview, or to add build/deploy instructions specific to this repo, I can edit the README further — tell me what you'd like shown.
